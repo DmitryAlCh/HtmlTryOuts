@@ -1,0 +1,21 @@
+body {
+	background-color: orange;
+}
+input{
+	border-radius:6px;
+}
+#addButton{
+	width:25%;
+	background-color: brown;
+	border:0;
+	display:inline-block;
+	padding:10px;
+	border-radius:6px;
+}
+li{
+	padding:10px;
+	border:2px;
+	border-style:dotted;
+	background-color:blue;
+	border-radius:6px;
+}
