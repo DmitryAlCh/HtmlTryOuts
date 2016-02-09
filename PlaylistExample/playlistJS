@@ -1,0 +1,25 @@
+window.onload=init;
+function init(){
+	var button=document.getElementById("addButton");
+	button.onclick=handleButtonClick;
+}
+function handleButtonClick(){
+	var textInput=document.getElementById("songInputText");
+	var songName=textInput.value;
+	if (!songName){
+		alert("Please fill input field")
+	} else{
+		alert("Adding "+ songName);
+		addElement("playlist","ul","li","li",songName);
+		//addElement("miscInfo","div","p","p","tryOut text");
+	}
+}
+function addElement(parentId,parentType,childType,childId,childEntry){
+	var childType=document.createElement(childType);
+	childType.innerHTML = childEntry;
+	var parentType = document.getElementById(parentId);
+	parentType.appendChild(childType);
+}
+
+
+
