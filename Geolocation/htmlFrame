@@ -1,0 +1,14 @@
+<!doctype html>
+<head>
+	<title>Location test</title>
+	<meta charset="utf-8">
+	<script src="myLoc.js"></script>
+	<link rel ="stylesheet" href="myLoc.css">
+</head>
+<body>
+	<div id="location">
+	 your location will be here
+	</div>
+</body>
+
+</html>
