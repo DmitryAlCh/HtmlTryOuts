@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<head>
+	<link rel="stylesheet" href="main.css">
+	<script src="info.js"></script>
+	<title>Prez</title>
+	
+</head>
+<body>
+	<div class="header" id="myHeader">
+		<h1 id="mainHeading">Header Element</h1>
+	</div>
+	<div class="main" id="mainInfo">
+		<div class="main-image" id="myMainImage">
+			
+			<img id="imgItself" src="ellatLogo.bmp">
+		</div>
+		<div class="main-text" id="myMainText">
+			<h3 id="text">Text or annotation part</h3>
+		</div>
+	</div>
+	<div class="footer" id="myFooter">
+		<h3 id="footerText">Footer part</h3>
+		<button id="bNext">Next</button>
+	</div>
+	<!--<div class="myRow">
+		<div class="img-container">
+			<img src="ellatLogo.bmp">
+		</div>
+	</div>
+	<p class="ten">10em</p>
+	<p class="twenty">20em</p>
+	<p class="thirty">30em</p>
+	<p class="fourty">40em</p>
+	<p class="fifty">50em</p>
+	<p class="sixty">60em</p>
+	<p class="seventy">70em</p>
+	<p class="eighty">80em</p>
+	<p class="ninenty">90em</p>
+	<p class="hundred">100em</p>
+	-->
+<script>
+	var myLayout=new Layout();
+	
+	function myFun(){
+		//main vertical grid:
+		myLayout.myFooter.style.height=myLayout.myUnit(5); //768/7.5=102.4 remains:665
+		myLayout.myMain.style.height=myLayout.myUnit(1.73); //768/1.5=512 remains:153
+		myLayout.myHeader.style.height=myLayout.myUnit(5); //768/5=153.6
+		
+		// heights:
+		myLayout.imgDiv.style.height=myLayout.myUnit(1.85);
+		myLayout.imgItself.style.maxHeight=myLayout.myUnit(1.9);
+		//widths:
+		myLayout.imgDiv.style.width=myLayout.myHorUnit(2.1);
+		myLayout.imgItself.style.maxWidth=myLayout.myHorUnit(2.2);
+		myLayout.myMainText.style.width=myLayout.myHorUnit(2.1);
+			
+	}
+	
+	//*******************information part***********************
+	var MyInfo=function(){
+		this.mHeading=document.getElementById("mainHeading");
+		this.mText=document.getElementById("text");
+		this.currentPage=0;
+		
+	}
+	var myInfo =  new MyInfo();
+	myInfo.mHeading.innerHTML=infoPages.pages[0]["header"];
+	myInfo.mText.innerHTML=infoPages.pages[0]["text"];
+	myLayout.imgItself.src=infoPages.pages[0]["image"];
+
+	window.onload=myFun;
+	window.onresize=myFun;
+	</script>
+</body>
+</html>
