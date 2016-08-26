@@ -1,0 +1,92 @@
+*{
+
+}
+body{
+  margin:0;
+  border:solid gold 4px;
+  height:99vh;
+  background-image: url('/imgNeat/Singlecloud.svg');
+
+}
+.frame{
+  width:92%;
+  height:92%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
+
+  border:dashed red 3px;
+}
+.firstRow{
+  border:solid orange 2px;
+  background-color: orange;
+  display:flex;
+  justify-content:space-around;
+  align-items:flex-end;
+  height:25%;
+}
+.pic{
+  border:solid magenta 1px;
+  width:20%;
+  height:100%;
+  background-color: blue;
+}
+.topMenu{
+  border:solid magenta 1px;
+  width:80%;
+  height:25%;
+  background-color: cyan;
+  display:flex;
+  justify-content: space-around;
+}
+.button{
+  width:15%;
+  border: solid gold 1px;
+
+}
+.button:hover{
+  cursor:pointer;
+}
+.secondRow{
+  border:solid yellow 2px;
+  background-color: yellow;
+  display:flex;
+  align-items:flex-end;
+  height:68%;
+}
+.anime{
+  border:solid magenta 1px;
+  width:25%;
+  height:100%;
+  background-color: blue;
+}
+.mainText{
+  border:solid magenta 1px;
+  width:50%;
+  height:100%;
+  background-color: cyan;
+}
+.secPic{
+  border:solid magenta 1px;
+  width:25%;
+  height:90%;
+
+  background-image: url('/imgNeat/aplleTrre.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.thirdRow{
+  height:5.5%;
+  border:solid yellow 2px;
+  background-color: green;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer{
+  width:33%;
+  height:100%;
+  border:solid orange 1px;
+  background-color: magenta;
+}
